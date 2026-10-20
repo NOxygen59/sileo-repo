@@ -19,6 +19,7 @@ Sur l'iPad, ouvrir [sileo://source/https://noxygen59.github.io/sileo-repo/](sile
 |---|---|
 | Arrow, Finally. Revamped | [arrow-finally-Revamped](https://github.com/NOxygen59/arrow-finally-Revamped) |
 | Dual Wield Pad | [dual-wield-pad](https://github.com/NOxygen59/dual-wield-pad) |
+| iOS MCP (fork en français) | [ios-mcp](https://github.com/NOxygen59/ios-mcp) |
 
 ## Comment ça marche
 
@@ -26,7 +27,7 @@ Sur l'iPad, ouvrir [sileo://source/https://noxygen59.github.io/sileo-repo/](sile
 2. À chaque push, l'action [Publier la source Sileo](.github/workflows/pages.yml) lance `scripts/build-index.sh`. Le script génère `Packages` (avec ses versions compressées) et `Release` (avec leurs sommes de contrôle), puis publie le tout sur GitHub Pages.
 3. Sileo relit `Release` et `Packages` à chaque actualisation, et propose les nouvelles versions.
 
-**Publier une mise à jour :** déposer le nouveau `.deb` dans `debs/` et pousser. Pour Arrow, `scripts/publish.sh` du dépôt du tweak fait tout : compilation, copie et push. L'ancienne version peut rester, Sileo prend la plus récente.
+**Publier une mise à jour :** déposer le nouveau `.deb` dans `debs/` et pousser. Pour Arrow et iOS MCP, `scripts/publish.sh` du dépôt du tweak fait tout : compilation, copie et push. L'ancienne version peut rester, Sileo prend la plus récente.
 
 Pour tester l'index sur un Mac : `brew install dpkg`, puis `scripts/build-index.sh _site`.
 
